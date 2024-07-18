@@ -1,0 +1,158 @@
+*{
+  --text-color:rgb(235, 190, 84);
+  --background-color:rgb(47, 52, 64);
+  --main-bg:rgb(47, 52, 64);
+  --shadow:rgb(41, 43, 48);
+  --cardcolor:rgb(55, 62, 71);
+  --font-family: "Poppins",san-serif;
+  --trans: 0.3s ease;
+  text-decoration: none;
+}
+.hello{
+  background-color: var(--main-bg);
+}
+.navBar{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--cardcolor);
+  box-shadow: 0 0 9px var(--shadow);
+}
+.navBar .name{
+  font-family: var(--font-family);
+  margin-left: 30px;
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+.navBar .name span{
+  color: var(--text-color);
+}
+.contents ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+.contents ul li{
+  font-family: var(--font-family);
+  list-style: none;
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+.contents ul li a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+.contents ul li a:hover{
+  color: white;
+  transition: var(--trans);
+}
+.main-content{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 630px;
+  margin: 15px 15px 0px 12px;
+  grid-gap: 7.5px;
+}
+.side-bar{
+  
+  z-index: 1000;
+  background-color: var(--cardcolor);
+  grid-column: 1/2;
+  padding: 20px;
+  border-radius: 2%;
+  box-shadow: 2px 2px 8px var(--shadow);
+
+  img{
+    padding: 0px;
+    height: 130px;
+    width: auto;
+    margin-left: 56px;
+    border: 3px solid var(--text-color);
+    border-radius: 50%;
+  }
+}
+
+.skills{
+  cursor: pointer;
+  color: aliceblue;
+  margin-left: 60px;
+  margin-top: 40px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+
+  span{
+    color: var(--text-color);
+    font-size: 30px;
+  }
+}
+
+.skill-cards{
+  grid-column: 2/3;
+  display: flex;
+  flex-wrap: wrap ;
+  /*box-shadow: 0px 0px 8px var(--shadow);*/
+  padding: 40px;
+  .cardpop{
+    height: auto;
+    width: 300px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: var(--cardcolor);
+    box-shadow: 0px 0px 8px var(--shadow);
+  }
+  .cardpop p{
+    color: var(--text-color);
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .cardpop:hover{
+    background-color: var(--text-color);
+    transition: 0.3s ease-in-out;
+    width: 320px;
+    .bx{
+      color: var(--background-color);
+      font-size: 90px;
+      left: 115px;
+      transition: 0.3s ease-in-out;
+    }
+    p{
+      transition: 0.3s ease-in-out;
+      color: rgb(6, 2, 24);
+      font-weight: 600;
+    }
+  }
+  .bx{
+    color: aliceblue;
+    font-size: 60px;
+    position: relative;
+    left: 120px;
+    top: 20px;
+  }
+  
+}
+.about {
+  width: 650px;
+padding: 50px;
+
+.text{
+  margin-left: 20px;
+  font-family: var(--font-family);
+  color: white;
+  font-size: 25px;
+}
+.name{
+  font-size: 45px;
+  span{
+    color: var(--text-color);
+    font-size: 60px;
+  }
+}}
